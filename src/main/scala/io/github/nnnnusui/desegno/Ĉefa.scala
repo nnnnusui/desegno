@@ -1,4 +1,5 @@
-package io.github.nnnnusui
+package io.github.nnnnusui.desegno
+
 import scala.main as ĉefa
 import Predef.print as presi
 
