@@ -16,4 +16,10 @@ lazy val root = project
       "org.lwjgl" % "lwjgl-glfw" % lwjglVersion classifier s"natives-$os",
       "org.lwjgl" % "lwjgl-vulkan" % lwjglVersion,
     ),
+    scalacOptions ++= (
+      "-deprecation" ::
+        "-unchecked" ::
+        "-Wunused:all" ::
+        Nil
+    ),
   )
