@@ -1,0 +1,10 @@
+{
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/target": true,
+    ".metals": true,
+  },
+  "editor.formatOnSave": true,
+  "editor.indentSize": 2,
+  "files.insertFinalNewline": true,
+}
