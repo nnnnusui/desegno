@@ -11,11 +11,13 @@ import org.lwjgl.vulkan.VkInstanceCreateInfo
 import scala.util.Using.Releasable as Liberigebla
 
 import io.github.nnnnusui.desegno._tradukita.*
+import io.github.nnnnusui.desegno.rekordi
 
 object Instanco:
   def krei(
       aplTitolo: Signoĉeno = "Nenio nomo",
   )(using stako: MemoroStako) =
+    rekordi.spuro("Krei vk-instancon.")
     val aplInfo = VkApplicationInfo.calloc(stako)
     aplInfo.sType(VK10.VK_STRUCTURE_TYPE_APPLICATION_INFO)
     aplInfo.pApplicationName(MemoraUtilo.memASCII(aplTitolo))
@@ -41,3 +43,4 @@ class Instanco(
 ):
   def detrui(): Unuo =
     VK10.vkDestroyInstance(kruda, null)
+    rekordi.spuro("Vk-instanco estis detruita.")

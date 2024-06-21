@@ -10,7 +10,7 @@ import io.github.nnnnusui.desegno._tradukita.*
 import io.github.nnnnusui.desegno.vulkan as vk
 
 @ĉefa def ĉefa =
-  presiln("Scala skribita en esperanto.")
+  rekordi.info("Scala skribita en esperanto.")
   val aplTitolo = "desegno"
   UzantaManaĝero: uzi =>
     given MemoroStako = uzi(stakoPuŝi())

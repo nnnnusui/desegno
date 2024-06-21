@@ -9,6 +9,7 @@ lazy val root = project
     version := "0.1.0",
     scalaVersion := scala3Version,
     libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test,
+    libraryDependencies += "com.outr" %% "scribe" % "3.15.0",
     libraryDependencies ++= List(
       "org.lwjgl" % "lwjgl" % lwjglVersion,
       "org.lwjgl" % "lwjgl" % lwjglVersion classifier s"natives-$os",
